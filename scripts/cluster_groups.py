@@ -10,7 +10,7 @@ path['motivation'] = path['motivation'].map(lambda x: x if type(x) != str else x
 path['Area'] = path['Area'].map(lambda x: x if type(x) != str else x.lower().strip())
 
 # choose which features to use for clustering
-path_simplified = path[['Area']]
+path_simplified = path[['Area', 'devoted_time', 'python', 'git']]
 # choose output shape
 path_simplified_output = path[['Area', 'devoted_time', 'python', 'git', 'Email']]
 
